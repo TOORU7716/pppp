@@ -91,24 +91,6 @@ body {
 }
 
 
-/* navの部分 */
-.logo {
-  width: 100px;
-  height: 100px;
-}
-
-.nav-right li>a {
-  line-height: 0.5;
-  color: #000;
-  font-weight: 200;
-  font-family: "cookhand", ms gothic, ヒラギノ角ゴ pro w3, hiragino kaku gothic pro, osaka, sans-serif;
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-}
-
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -223,7 +205,7 @@ address {
 
 ol,
 ul {
-  padding-left: 2rem;
+  padding-left: 0;
 }
 
 ol,

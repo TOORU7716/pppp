@@ -1,0 +1,293 @@
+body {
+    font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
+
+h3,
+p,
+span,
+li {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+
+header {
+    height: 140px;
+    width: 80%;
+}
+
+.logo {
+    width: 100px;
+    height: 80px;
+}
+
+.hoikuen {
+    color: red;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+
+.nav-right {
+    list-style: none;
+}
+
+.nav-right li>a {
+    line-height: 0.5;
+    color: #000;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu>li>a {
+    text-decoration: none;
+    color: #FF8282;
+    background-color: #FFDDDD;
+    padding: 10px;
+    border-right: 1px solid #FF0600;
+    font-size: 15px;
+}
+
+.first {
+    border-left: 1px solid #FF0600;
+}
+
+
+.menu>li>a:hover {
+    background-color: #FFADAC;
+    transition: 0.5s;
+}
+
+h2 {
+    display: inline-block;
+    border-bottom: 3px dotted #4169e1;
+    font-size: 50px;
+    color: #727070;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+/* -----------お知らせ----------- */
+#news {
+    width: 80%;
+}
+
+.news-item>h3 {
+    display: inline-block;
+    margin-right: 30px;
+    font-weight: normal;
+}
+
+.news-item>span {
+    color: red;
+}
+
+
+
+/* -----------特色----------- */
+#features {
+    width: 80%;
+}
+
+.features-left>img {
+    width: 427px;
+    height: 285px;
+}
+
+.features-right span {
+    color: red;
+}
+
+/* -----------教育方針----------- */
+#education {
+    width: 80%;
+}
+
+.education-left img {
+    width: 427px;
+    height: 320px;
+}
+
+.education-right ul {
+    color: red;
+}
+
+/* -----------一日のスケジュール----------- */
+#schedule {
+    width: 80%;
+    background-color: #FFEAEA;
+}
+
+.schedule-left ul li {
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.schedule-right img {
+    width: 552px;
+    height: 368px;
+}
+
+/* -----------入園の流れ----------- */
+#flow {
+    width: 80%;
+}
+
+.flow-map span {
+    writing-mode: vertical-rl;
+    background-color: #F3E7E3;
+    vertical-align: top;
+    box-shadow: 8px 8px #D0A492;
+}
+
+.flow-map img {
+    margin: 70px 10px;
+}
+
+.flow-1 {
+    padding: 0 10px 10px 10px;
+}
+
+.flow-2 {
+    padding: 22px 30px;
+}
+
+.flow-3 {
+    padding: 35px 30px;
+}
+
+.flow-4 {
+    padding: 5px 15px 15px 15px;
+}
+
+.flow-5 {
+    padding: 70px 30px;
+}
+
+/* -----------園のイベント----------- */
+#event {
+    width: 80%;
+    background-color: #E3F2E5;
+}
+
+.event-left ul li {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+
+.event-right img {
+    width: 552px;
+    height: 368px;
+}
+
+/* -----------アクセス----------- */
+#access {
+    width: 80%;
+}
+
+.access-left p {
+    font-size: 20px;
+}
+
+.access-right iframe {
+    width: 600px;
+    height: 420px;
+}
+
+/* -----------お問い合わせ----------- */
+#inquiry {
+    width: 80%;
+    background-color: #FFEDED;
+}
+
+.inquiry-contents {
+    padding: 80px 70px;
+}
+
+#name {
+    padding: 10px 0 10px 40px;
+    background-color: #fffaf0;
+    border: none;
+    box-shadow: -5px 5px #FF8C6B;
+}
+
+#email {
+    padding: 10px 0 10px 40px;
+    background-color: #fffaf0;
+    border: none;
+    box-shadow: -5px 5px #FF8C6B;
+}
+
+#tel {
+    padding: 10px 0 10px 40px;
+    background-color: #fffaf0;
+    border: none;
+    box-shadow: -5px 5px #FF8C6B;
+}
+
+textarea {
+    padding: 10px 0 10px 40px;
+    background-color: #fffaf0;
+    border: none;
+    box-shadow: -5px 5px #FF8C6B;
+}
+
+::placeholder {
+    color: #000;
+}
+
+h4 {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+
+#checkbox {
+    background-color: #fffaf0;
+    box-shadow: -3px 3px #FF8C6B;
+    border-radius: 0;
+    border: none;
+
+}
+
+#soushin {
+    padding: 10px 60px;
+    background-color: #fff;
+    border: 3px solid #FF8C6B;
+    box-shadow: -10px 10px #FF8C6B;
+    border-radius: 5px;
+}
+
+/* フッター */
+footer {
+    background: linear-gradient(#A5D095, #7DB46A);
+    padding: 40px 30px 10px 30px;
+}
+
+.footer-left span {
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.footer-right ul li {
+    font-size: 16px;
+    color: #fff;
+}
+
+.footer-menu {
+    margin-left: 50px;
+}
+
+.footer-menu li>a {
+    padding: 20px 20px;
+}

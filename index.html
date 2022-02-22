@@ -11,15 +11,17 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/mystyles.css" rel="stylesheet" />
+
 </head>
 
 <body>
-    <!-- Responsive navbar-->
-    <header class="bg-success bg-opacity-50">
+    <!-- ヘッダー部分、ハンバーガーメニュー部分-->
+    <header class="bg-success bg-opacity-25 mx-auto">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <a href="#"><img src="img/hoikuen-logo.png" class="me-3 logo" alt="保育園のロゴ"></a>
-                <a class="navbar-brand" href="#">なかよし保育園</a>
+                <p class="navbar-brand hoikuen" href="#" style="color: black;">なかよし保育園</p>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation"><span
@@ -34,9 +36,10 @@
                 </div>
             </div>
         </nav>
+        <!-- メニューバー -->
         <nav>
-            <ul class="menu">
-                <li><a href="#">ホーム</a></li>
+            <ul class="menu ms-5">
+                <li><a class="first" href="#">ホーム</a></li>
                 <li><a href="#news">お知らせ</a></li>
                 <li><a href="#features">特色</a></li>
                 <li><a href="#education">教育方針</a></li>
@@ -48,86 +51,256 @@
             </ul>
         </nav>
     </header>
-    <!-- Header - set the background image for the header in the line below-->
-    <header class="py-5 bg-image-full"
-        style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1600x900')">
+    <!-- ヘッダー下のピンクの線 -->
+    <div style="border-bottom: 10px solid #F2668F;"></div>
+
+    <!-- ヘッダー下の画像部分-->
+    <div class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1600x900')">
         <div class="text-center my-5">
-            <img class="img-fluid rounded-circle mb-4" src="https://dummyimage.com/150x150/6c757d/dee2e6.jpg"
-                alt="..." />
-            <h1 class="text-white fs-3 fw-bolder">Full Width Pics</h1>
-            <p class="text-white-50 mb-0">Landing Page Template</p>
         </div>
-    </header>
+    </div>
+
     <!-- お知らせ -->
-    <section class="py-5" id="news">
+    <section class="py-2 mx-auto" id="news">
         <div class="container my-5">
             <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <h2>Full Width Backgrounds</h2>
-                    <p class="lead">A single, lightweight helper class allows you to add engaging, full width background
-                        images to sections of your page.</p>
-                    <p class="mb-0">The universe is almost 14 billion years old, and, wow! Life had no problem starting
-                        here on Earth! I think it would be inexcusably egocentric of us to suggest that we're alone in
-                        the universe.</p>
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="">なかよし保育園からのお知らせ</h2>
+                </div>
+                <div class="col-lg-12 news-item ms-5">
+                    <h3>2021/12/24</h3><span>不審者に注意呼びかけ</span>
+                    <p>ここ数日不審者が目撃されています。園児たちの安全にはくれぐれもお気をつけください。</p>
+                    <h3>2021/12/20</h3><span>クリスマス会について</span>
+                    <p>コロナの影響が小さいため、今年度クリスマス会を開催します。</p>
+                    <h3>2021/12/18</h3><span>体調不良について</span>
+                    <p>園児はもちろん先生方も体調不良には十分お気をつけください。</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Image element - set the background image for the header in the line below-->
-    <div class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/4ulffa6qoKA/1200x800')">
-        <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
-        <div style="height: 20rem"></div>
-    </div>
+
     <!-- 特色 -->
-    <section class="py-5" id="features">
-        <div class="container my-5">
+    <section class="py-5 mx-auto bg-success bg-opacity-25" id="features">
+        <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <h2>Engaging Background Images</h2>
-                    <p class="lead">The background images used in this template are sourced from Unsplash and are open
-                        source and free to use.</p>
-                    <p class="mb-0">I can't tell you how many people say they were turned off from science because of a
-                        science teacher that completely sucked out all the inspiration and enthusiasm they had for the
-                        course.</p>
+                <div class="col-lg-12 text-center mb-5">
+                    <h2>なかよし保育園の特色</h2>
+                </div>
+                <div class="col-lg-6 me-3 features-left">
+                    <img src="img/smile-features.png" alt="笑顔の少年">
+                </div>
+                <div class="col-lg-5 features-right">
+                    <p>私たちのコンセプトは<br>「<span>みんな、仲良く!</span>」<br>です。<br><br>
+                        私たちは日々誰かに助けられています。
+                        だからこそ皆が仲良く生活できるように子供たちに教えていきます。
+                    </p>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
     <!-- 教育方針 -->
-    <section id="=education">
-
+    <section class="py-5 mx-auto " id="=education">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2>なかよし保育園の教育方針</h2>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-7 education-left">
+                    <img src="img/education-piano.png" alt="ピアノを弾く少年">
+                </div>
+                <div class="col-lg-4 education-right">
+                    <ul class="mb-5">
+                        <li>心を育てる</li>
+                        <li>体を鍛える</li>
+                        <li>音楽を楽しむ</li>
+                        <li>創造性を発揮する</li>
+                        <li>積極的にチャレンジする</li>
+                        <li>考える力を鍛える</li>
+                    </ul>
+                    <p>何事もやらせてみるを大切にしています。</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- 1日のスケジュール -->
-    <section id="schedule">
-
+    <section class="py-5 mx-auto" id="schedule">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2>一日のスケジュール</h2>
+                </div>
+                <div class="col-lg-4 schedule-left">
+                    <ul>
+                        <li>7:30&nbsp;&nbsp;開園（順次登園）</li>
+                        <li>※登園後は自由時間</li>
+                        <li>9:00&nbsp;&nbsp;おやつの時間</li>
+                        <li>9:30&nbsp;&nbsp;朝の挨拶会</li>
+                        <li>9:45&nbsp;&nbsp;午前の遊び</li>
+                        <li>12:00&nbsp;&nbsp;昼食</li>
+                        <li>12:45&nbsp;&nbsp;お昼寝の時間</li>
+                        <li>15:00&nbsp;&nbsp;おやつの時間</li>
+                        <li>16:00&nbsp;&nbsp;帰りの挨拶会</li>
+                        <li>17:00&nbsp;&nbsp;合同保育</li>
+                        <li>18:00&nbsp;夕食・おやつの時間</li>
+                        <li>20:00&nbsp;&nbsp;閉園</li>
+                    </ul>
+                </div>
+                <div class="col-lg-7 schedule-right text-center">
+                    <img src="img/schedule-child.png" alt="遊ぶ子供たち">
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- 入園の流れ -->
-    <section id="flow">
-
+    <section class="py-5 mx-auto" id="flow">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2>入園の流れ</h2>
+                </div>
+                <div class="col-lg-12 flow-map mb-5 text-center">
+                    <span class="flow-1">資料請求・<br>&nbsp; &nbsp; お問い合わせ</span><img src="img/arrow.png" alt="矢印">
+                    <span class="flow-2">見学・説明会</span><img src="img/arrow.png" alt="矢印">
+                    <span class="flow-3">入園手続き</span><img src="img/arrow.png" alt="矢印">
+                    <span class="flow-4">入園前の説明会</span><img src="img/arrow.png" alt="矢印">
+                    <span class="flow-5">入園</span>
+                </div>
+                <div class="col-lg-12">
+                    <ul>
+                        <li>・見学、説明会は事前にご予約ください。</li>
+                        <li>・入園につきましては、空きが出来次第申込順に入園となるため少々お待ちいただく場合がございます。</li>
+                        <li>・0歳〜6歳までの入園に限ります。</li>
+                        <li>・お子様の体調によっては入園をお断りさせていただく場合がございます。</li>
+                        <li>・教育方針について希望がある場合は事前にお伝えください。</li>
+                        <li>・園のイベントには極力ご両親のどちらかのご参加をお願いします。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- イベント -->
-    <section id="event">
-
+    <section class="py-5 mx-auto" id="event">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2>園のイベント案内</h2>
+                </div>
+                <div class="col-lg-4 event-left">
+                    <ul>
+                        <li>1/1〜1/3&nbsp;お休み</li>
+                        <li>2/3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;節分</li>
+                        <li>2/14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;バレンタインデー</li>
+                        <li>3/3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ひな祭り</li>
+                        <li>4月初旬&nbsp;&nbsp;&nbsp;お花見</li>
+                        <li>6/6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;お遊戯会</li>
+                        <li>7/7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;七夕</li>
+                        <li>7月下旬&nbsp;&nbsp;&nbsp;お泊まり会（花火）</li>
+                        <li>9/8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;お歌の発表会</li>
+                        <li>10/31&nbsp;&nbsp;&nbsp;&nbsp;ハロウィン</li>
+                        <li>12/24&nbsp;&nbsp;&nbsp;&nbsp;クリスマス会</li>
+                    </ul>
+                </div>
+                <div class="col-lg-7 event-right">
+                    <img src="img/event.png" alt="ピアノを弾く先生">
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- アクセス -->
-    <section id="access">
-
+    <section class="py-5 mx-auto" id="access">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 access-left">
+                    <p>アクセス</p>
+                    <p>住所<br>
+                        〒998-0865<br>
+                        山形県酒田市北新橋1-7-1
+                    </p><br><br>
+                    <p>Tel:050-4649-4649<br>
+                        mail:nakayosi@gmail.com</p>
+                    <br><br>
+                    <p>開園時間<br>
+                        月〜金:7:30〜20:00<br>
+                        土・日・祝はお休み
+                    </p>
+                </div>
+                <div class="col-lg-7 access-right">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.9734796125445!2d139.85375371418675!3d38.92458365294844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8e9eed59ea75eb%3A0xf62676935ea97c07!2z44CSOTk4LTA4NjUg5bGx5b2i55yM6YWS55Sw5biC5YyX5paw5qmL77yR5LiB55uu77yX4oiS77yR!5e0!3m2!1sja!2sjp!4v1645354493480!5m2!1sja!2sjp"
+                        allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
     </section>
 
     <!-- お問い合わせ -->
-    <section id="inquiry">
-
+    <section class="py-5 mx-auto mb-5" id="inquiry">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 bg-white inquiry-contents">
+                    <h3 class="mb-4">お問い合わせ</h3>
+                    <p class="mb-4"><input type="text" id="name" name="Name" placeholder="氏名" size="37"></p>
+                    <p class="mb-4"><input type="email" id="email" name="email" placeholder="メールアドレス" size="37"></p>
+                    <p class="mb-4"><input type="tel" id="tel" name="tel" placeholder="電話番号" size="37"></p>
+                    <p class="mb-4"><textarea id="message" name="message" placeholder="メッセージ" rows="2"
+                            cols="37"></textarea></p>
+                    <h4 class="privacy-policy mb-5">【プライバシーポリシー】<br>
+                        当サイトは、個人情報はお客様の承諾が無い限り第三者に絶対に開示をいたしません。
+                        お客様から個人情報をご提供していただき、サービスにご利用させていただく場合以外には利用いたしません。
+                        ご提供いただいた個人情報につきましては責任者を置き、適切な管理を行っております。</h4>
+                    <p class="privacy-policy check"><input type="checkbox" id="checkbox" name="checkbox"
+                            class="me-5">プライバシーポリシーに同意する</p>
+                    <p class="text-center"><input type="submit" id="soushin" name="soushin" value="送信する"></p>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer-->
-    <footer class="py-5 bg-dark">
+    <footer class="mx-auto">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 footer-left pt-3">
+                    <img src="img/hoikuen-logo.png" class="logo" alt="ロゴ">
+                    <span>なかよし保育園</span>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-4 footer-right">
+                    <ul>
+                        <li>〒998-0865&nbsp;&nbsp;山形県酒田市北新橋1-7-1</li>
+                        <li>TEL：050-4649-4649</li>
+                        <li>mail:nakayosi@gmail.com</li>
+                        <li>開園時間：​月〜金：7:30~20:00</li>
+                        <li>土・日・祝はお休み</li>
+                    </ul>
+                </div>
+            </div>
+            <nav>
+                <ul class="menu footer-menu mt-3">
+                    <li><a class="first" href="#">ホーム</a></li>
+                    <li><a href="#news">お知らせ</a></li>
+                    <li><a href="#features">特色</a></li>
+                    <li><a href="#education">教育方針</a></li>
+                    <li><a href="#schedule">一日のスケジュール</a></li>
+                    <li><a href="#flow">入園の流れ</a></li>
+                    <li><a href="#event">園のイベント案内</a></li>
+                    <li><a href="#access">アクセス</a></li>
+                    <li><a href="#inquiry">お問合せ</a></li>
+                </ul>
+            </nav>
+            <h3 class="text-center mt-5 mb-2 fs-2">健やかに育つを実現する</h3>
+            <p class="m-0 text-center text-white fs-6">©︎2021.なかよし保育園</p>
         </div>
     </footer>
     <!-- Bootstrap core JS-->
